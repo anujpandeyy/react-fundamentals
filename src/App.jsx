@@ -2,6 +2,7 @@ import Avatar from "./components/Avatar";
 import MyButton from "./components/Button"
 import ShoppingList from "./components/ShoppingList";
 import { useState } from 'react';
+import Board from "./components/Square";
 
 function App() {
   const [count,setCount] = useState(0);
@@ -14,6 +15,7 @@ function App() {
   <MyButton count={count} onClick={counter}></MyButton>
   <Avatar></Avatar>
   <ShoppingList></ShoppingList>
+  <Board></Board>
   </>
  );
 }
